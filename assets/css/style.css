@@ -1,0 +1,62 @@
+@charset "UTF-8";
+header {
+  position: relative;
+  max-width: 500px;
+  text-align: center; }
+
+main {
+  position: relative;
+  max-width: 500px; }
+
+.profile-pic {
+  position: relative;
+  left: 30%;
+  border-radius: 50%; }
+
+.text-changer-buttons {
+  position: relative;
+  left: 42%;
+  position: left; }
+
+.button--left {
+  float: left; }
+
+.button-right {
+  float: left; }
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background: black;
+  margin: 5px;
+  border-radius: 100px;
+  float: left; }
+
+.quote {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative; }
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  color: #aa8f6f;
+  font-size: 4em; }
+
+blockquote:before {
+  content: '“';
+  bottom: 55%;
+  left: 5%; }
+
+blockquote:after {
+  content: '”';
+  top: 40%; }
+
+.profile-link {
+  position: relative;
+  left: 40%;
+  border: 1px solid #aa8f6f;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 1%; }
