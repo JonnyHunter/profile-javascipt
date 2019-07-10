@@ -1,0 +1,24 @@
+{
+  "name": "newrepository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass-chokidar ./src/scss -o ./assets/css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonnyHunter/newRepository.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonnyHunter/newRepository/issues"
+  },
+  "homepage": "https://github.com/JonnyHunter/newRepository#readme",
+  "devDependencies": {
+    "include-media": "^1.4.9",
+    "node-sass-chokidar": "^1.3.5"
+  }
+}
