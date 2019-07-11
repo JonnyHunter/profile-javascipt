@@ -21,6 +21,7 @@ function changeTextLeft(){
     document.getElementById("1").style.background="black";
     document.getElementById("2").style.background="black";
     counter=3;
+    alert(counter);
   } 
   if(counter===2) { 
     alert("left counter 2 function");
@@ -32,7 +33,7 @@ function changeTextLeft(){
     document.getElementById("1").style.background="black";
     document.getElementById("2").style.background="gold";
   } 
-  return counter;
+
 }
 
 function changeTextRight() {
@@ -69,6 +70,6 @@ function changeTextRight() {
     document.getElementById("2").style.background="gold";
     counter=-1;
   } 
-  return counter;
+
 }
   
