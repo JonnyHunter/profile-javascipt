@@ -1,5 +1,7 @@
 @import "colours";
-
+.user-details {
+  text-align: center;
+}
 header {
   position: relative;
   max-width: 500px;
@@ -17,8 +19,9 @@ max-width: 500px;
   height: 200px;
 }
 .text-changer-buttons {
-  position: relative;
+  position: absolute;
   left: 42%;
+  bottom: 25%;
   position: left;
   padding-bottom: 5%;
 }
@@ -32,10 +35,10 @@ max-width: 500px;
   float: left;
 }
 .circle--1 {
-
+  
 }
 .circle--2 {
-
+  background: #A98F6D;
 }
 .circle3 {
 

@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.user-details {
+  text-align: center; }
+
 header {
   position: relative;
   max-width: 500px;
@@ -16,8 +19,9 @@ main {
   height: 200px; }
 
 .text-changer-buttons {
-  position: relative;
+  position: absolute;
   left: 42%;
+  bottom: 25%;
   position: left;
   padding-bottom: 5%; }
 
@@ -28,6 +32,9 @@ main {
   margin: 5px;
   border-radius: 100px;
   float: left; }
+
+.circle--2 {
+  background: #A98F6D; }
 
 .quote {
   text-align: center;
