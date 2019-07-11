@@ -19,20 +19,12 @@ max-width: 500px;
   position: relative;
   left: 42%;
   position: left;
+  padding-bottom: 5%;
 }
-.button {
 
-}
-.button--left {
-  float: left;
-}
-.button-right {
-  float: left;
-
-}
 .circle {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background: black;
   margin: 5px;
   border-radius: 100px;
@@ -81,4 +73,44 @@ blockquote:after {
   text-transform: uppercase;
   color: black;
   padding: 1%;
+}
+.chevron {
+  float: left;
+  position: relative;
+}
+.chevron--left {
+  right: 5%;
+}
+.chevron--right {
+left: 5%;
+}
+
+.chevron--right::after {
+  content: "";
+  display: inline-block;
+  height: .45em;
+  width: .45em; 
+  margin-left: .5em;
+  border: solid #A98F6D;
+  border-width: .2em .2em 0 0;
+  transform: rotate(45deg) translateY(-.05em);
+}
+.chevron--left::after {
+  content: "";
+  display: inline-block;
+  height: .45em;
+  width: .45em; 
+  margin-left: .5em;
+  border: solid #A98F6D;
+  border-width: .2em .2em 0 0;
+  transform: rotate(-135deg) translateY(-.05em);
+}
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+  color: white;
+  cursor: pointer;
 }
