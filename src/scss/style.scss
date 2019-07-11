@@ -4,7 +4,6 @@ header {
   position: relative;
   max-width: 500px;
   text-align: center;
-  
 }
 main {
 position: relative;
@@ -14,6 +13,8 @@ max-width: 500px;
   position: relative;
   left: 30%;         
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 .text-changer-buttons {
   position: relative;
@@ -113,4 +114,11 @@ button {
   background: white;
   color: white;
   cursor: pointer;
+}
+
+.profile--2 {
+  display: none;
+}
+.profile--3 {
+  display: none;
 }
