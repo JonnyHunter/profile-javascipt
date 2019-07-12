@@ -1,38 +1,48 @@
 @import "colours";
+@import "../../node_modules/include-media/dist/include-media";
 .user-details {
   text-align: center;
 }
 header {
-  position: relative;
-  max-width: 500px;
-  text-align: center;
+  @include media("<phone") {
+    position: relative;
+    max-width: 414px;
+    text-align: center;
+  }
 }
 main {
-position: relative;
-max-width: 500px;
+  @include media("<phone") {
+    position: relative;
+    max-width: 414px;
+}
 }
 .profile-pic { 
-  position: relative;
-  left: 30%;         
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  @include media("<phone") {
+    position: relative;
+    left: 30%;         
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
 }
 .text-changer-buttons {
-  position: absolute;
-  left: 42%;
-  bottom: 25%;
-  position: left;
-  padding-bottom: 5%;
+  @include media("<phone") {
+    position: absolute;
+    left: 42%;
+    bottom: 25%;
+    position: left;
+    padding-bottom: 5%;
+  }
 }
-
 .circle {
-  width: 7px;
-  height: 7px;
-  background: black;
-  margin: 5px;
-  border-radius: 100px;
-  float: left;
+  @include media("<phone") {
+    width: 7px;
+    height: 7px;
+    background: black;
+    margin: 5px;
+    border-radius: 100px;
+    float: left;
+  }
 }
 .circle--1 {
   
@@ -44,79 +54,99 @@ max-width: 500px;
 
 }
 .quote {
-  text-align: center;
-  padding-bottom: 20px;
-  position: relative;
+  @include media("<phone") {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+  }
 }
 blockquote {
 
 }
 blockquote:before,
 blockquote:after {
-	position: absolute;
-	color: $gold-color;
-	font-size: 4em;
-	
+  @include media("<phone") {
+    position: absolute;
+    color: $gold-color;
+    font-size: 4em;
+  }
 }
 blockquote:before {
-  content: '“';
-  bottom: 55%;
-  left: 5%;
+  @include media("<phone") {
+    content: '“';
+    bottom: 55%;
+    left: 5%;
+  }
 }
 
 blockquote:after {
-  content: '”';
-  top: 40%;
-	
+  @include media("<phone") {
+    content: '”';
+    top: 40%;
+  }
 }
 .profile-link {
-  position: relative;
-  left: 40%;
-  border: 1px solid $gold-color;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  padding: 1%;
+  @include media("<phone") {
+    position: relative;
+    left: 40%;
+    border: 1px solid $gold-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 1%;
+  }
 }
 .chevron {
-  float: left;
-  position: relative;
+  @include media("<phone") {
+    float: left;
+    position: relative;
+  }
 }
 .chevron--left {
-  right: 5%;
+  @include media("<phone") {
+    right: 5%;
+  }
 }
 .chevron--right {
-left: 5%;
+  @include media("<phone") {
+    left: 5%;
+  }
 }
 
 .chevron--right::after {
-  content: "";
-  display: inline-block;
-  height: .45em;
-  width: .45em; 
-  margin-left: .5em;
-  border: solid #A98F6D;
-  border-width: .2em .2em 0 0;
-  transform: rotate(45deg) translateY(-.05em);
+  @include media("<phone") {
+    content: "";
+    display: inline-block;
+    height: .45em;
+    width: .45em; 
+    margin-left: .5em;
+    border: solid #A98F6D;
+    border-width: .2em .2em 0 0;
+    transform: rotate(45deg) translateY(-.05em);
+  }
 }
 .chevron--left::after {
-  content: "";
-  display: inline-block;
-  height: .45em;
-  width: .45em; 
-  margin-left: .5em;
-  border: solid #A98F6D;
-  border-width: .2em .2em 0 0;
-  transform: rotate(-135deg) translateY(-.05em);
+  @include media("<phone") {
+    content: "";
+    display: inline-block;
+    height: .45em;
+    width: .45em; 
+    margin-left: .5em;
+    border: solid #A98F6D;
+    border-width: .2em .2em 0 0;
+    transform: rotate(-135deg) translateY(-.05em);
+  }
 }
 button {
-  display: inline-block;
-  border: none;
-  padding: 0;
-  margin: 0;
-  background: white;
-  color: white;
-  cursor: pointer;
+  @include media("<phone") {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .profile--2 {
