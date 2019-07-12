@@ -1,35 +1,48 @@
 @charset "UTF-8";
-.user-details {
-  text-align: center; }
+.user-details p {
+  display: inline-block; }
 
-@media (max-width: 319px) {
-  header {
-    position: relative;
-    max-width: 414px;
+@media (min-width: 769px) {
+  .user-details p:nth-child(2) {
+    padding-left: 10px; } }
+
+@media (max-width: 767px) {
+  .user-details {
+    display: block;
     text-align: center; } }
 
-@media (max-width: 319px) {
+.user--name:after {
+  content: "/"; }
+
+@media (max-width: 767px) {
   main {
     position: relative;
     max-width: 414px; } }
 
-@media (max-width: 319px) {
-  .profile-pic {
-    position: relative;
-    left: 30%;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px; } }
+.profile-pic {
+  float: right;
+  position: relative;
+  bottom: 84px;
+  width: 200px;
+  height: 200px; }
+  @media (max-width: 767px) {
+    .profile-pic {
+      bottom: 0;
+      float: none;
+      left: 30%;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .text-changer-buttons {
     position: absolute;
-    left: 42%;
-    bottom: 25%;
+    left: 40%;
+    top: 62%;
     position: left;
     padding-bottom: 5%; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .circle {
     width: 7px;
     height: 7px;
@@ -41,54 +54,66 @@
 .circle--2 {
   background: #A98F6D; }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .quote {
     text-align: center;
     padding-bottom: 20px;
     position: relative; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   blockquote:before,
   blockquote:after {
     position: absolute;
     color: #aa8f6f;
     font-size: 4em; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   blockquote:before {
     content: '“';
     bottom: 55%;
     left: 5%; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   blockquote:after {
     content: '”';
     top: 40%; } }
 
-@media (max-width: 319px) {
-  .profile-link {
-    position: relative;
-    left: 40%;
-    border: 1px solid #aa8f6f;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    padding: 1%; } }
+.profile-link {
+  position: relative; }
+  @media (max-width: 767px) {
+    .profile-link {
+      left: 40%;
+      border: 1px solid #aa8f6f;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      padding: 1%; } }
 
-@media (max-width: 319px) {
+@media (min-width: 769px) {
+  .profile-link::after {
+    content: "";
+    display: inline-block;
+    height: .45em;
+    width: .45em;
+    margin-left: .5em;
+    border: solid #aa8f6f;
+    border-width: .1em .1em 0 0;
+    transform: rotate(45deg) translateY(-0.05em); } }
+
+@media (max-width: 767px) {
   .chevron {
     float: left;
     position: relative; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .chevron--left {
     right: 5%; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .chevron--right {
     left: 5%; } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .chevron--right::after {
     content: "";
     display: inline-block;
@@ -99,7 +124,7 @@
     border-width: .2em .2em 0 0;
     transform: rotate(45deg) translateY(-0.05em); } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   .chevron--left::after {
     content: "";
     display: inline-block;
@@ -110,7 +135,7 @@
     border-width: .2em .2em 0 0;
     transform: rotate(-135deg) translateY(-0.05em); } }
 
-@media (max-width: 319px) {
+@media (max-width: 767px) {
   button {
     display: inline-block;
     border: none;

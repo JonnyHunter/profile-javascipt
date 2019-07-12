@@ -1,41 +1,59 @@
 @import "colours";
 @import "../../node_modules/include-media/dist/include-media";
 .user-details {
-  text-align: center;
-}
-header {
-  @include media("<phone") {
-    position: relative;
-    max-width: 414px;
+  p{
+    display: inline-block;
+  }
+
+  p:nth-child(2){
+    @include media (">tablet"){
+      padding-left: 10px;
+     
+      
+    }
+  }
+  @include media("<tablet") {
+    display: block;
     text-align: center;
   }
 }
+.user--name:after {
+  content:"/";
+  
+}
+ 
 main {
-  @include media("<phone") {
+  @include media("<tablet") {
     position: relative;
     max-width: 414px;
 }
 }
 .profile-pic { 
-  @include media("<phone") {
-    position: relative;
+  float: right;
+  position: relative;
+  bottom: 84px;
+  width: 200px;
+  height: 200px;
+  @include media("<tablet") {
+    bottom: 0;
+    float: none;
     left: 30%;         
     border-radius: 50%;
     width: 200px;
     height: 200px;
-}
+  }
 }
 .text-changer-buttons {
-  @include media("<phone") {
+  @include media("<tablet") {
     position: absolute;
-    left: 42%;
-    bottom: 25%;
+    left: 40%;
+    top: 62%;
     position: left;
     padding-bottom: 5%;
   }
 }
 .circle {
-  @include media("<phone") {
+  @include media("<tablet") {
     width: 7px;
     height: 7px;
     background: black;
@@ -54,7 +72,7 @@ main {
 
 }
 .quote {
-  @include media("<phone") {
+  @include media("<tablet") {
     text-align: center;
     padding-bottom: 20px;
     position: relative;
@@ -65,14 +83,14 @@ blockquote {
 }
 blockquote:before,
 blockquote:after {
-  @include media("<phone") {
+  @include media("<tablet") {
     position: absolute;
     color: $gold-color;
     font-size: 4em;
   }
 }
 blockquote:before {
-  @include media("<phone") {
+  @include media("<tablet") {
     content: '“';
     bottom: 55%;
     left: 5%;
@@ -80,14 +98,15 @@ blockquote:before {
 }
 
 blockquote:after {
-  @include media("<phone") {
+  @include media("<tablet") {
     content: '”';
     top: 40%;
   }
 }
 .profile-link {
-  @include media("<phone") {
-    position: relative;
+
+position: relative;
+  @include media("<tablet") {
     left: 40%;
     border: 1px solid $gold-color;
     text-decoration: none;
@@ -96,25 +115,37 @@ blockquote:after {
     padding: 1%;
   }
 }
+.profile-link::after {
+  @include media(">tablet") {
+    content: "";
+    display: inline-block;
+    height: .45em;
+    width: .45em; 
+    margin-left: .5em;
+    border: solid $gold-color;
+    border-width: .1em .1em 0 0;
+    transform: rotate(45deg) translateY(-.05em);
+  }
+}
 .chevron {
-  @include media("<phone") {
+  @include media("<tablet") {
     float: left;
     position: relative;
   }
 }
 .chevron--left {
-  @include media("<phone") {
+  @include media("<tablet") {
     right: 5%;
   }
 }
 .chevron--right {
-  @include media("<phone") {
+  @include media("<tablet") {
     left: 5%;
   }
 }
 
 .chevron--right::after {
-  @include media("<phone") {
+  @include media("<tablet") {
     content: "";
     display: inline-block;
     height: .45em;
@@ -126,7 +157,7 @@ blockquote:after {
   }
 }
 .chevron--left::after {
-  @include media("<phone") {
+  @include media("<tablet") {
     content: "";
     display: inline-block;
     height: .45em;
@@ -138,7 +169,7 @@ blockquote:after {
   }
 }
 button {
-  @include media("<phone") {
+  @include media("<tablet") {
     display: inline-block;
     border: none;
     padding: 0;
